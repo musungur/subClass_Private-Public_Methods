@@ -54,8 +54,19 @@ class Shelys(Employees):
 ict_shelys = Shelys("Zuma","10002",1942,"single","ict","executive ict",1972)
 
 print(isinstance(ict_shelys,Shelys))
+print("__str & __repr__ display below")
 print(ict_shelys.__repr__())
 print(ict_shelys.__str__())
 print("**call private method from main class**")
 print(ict_shelys._Employees__directors())
 print(issubclass(Shelys,Employees))
+pass
+# appending, inserting into a list
+item = []
+
+item.append(ict1.__str__())
+item.insert(0,ict_shelys.__repr__())
+pass
+# display
+print("\n****")
+print(f"{item}\n***")
